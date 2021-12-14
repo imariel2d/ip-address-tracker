@@ -43,7 +43,7 @@
 .tracker-wrapper {
   padding-top: 16px;
   padding-bottom: 64px;
-  background: no-repeat url("../images/pattern-bg.png");
+  background: no-repeat url("images/pattern-bg.png");
   background-size: cover;
   position: relative;
   min-height: 200px;
