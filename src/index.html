@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IP Address Tracker | Frontend Mentor</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="tracker-wrapper">
+      <h1 id="page-title">IP Address Tracker</h1>
+      <form id="search-form" class="search-form" action="">
+        <label>
+          <input id="search-input" placeholder="Search for any IP address or domain" type="text"/>
+          <button id="search-button">
+            <img src="../images/icon-arrow.svg" alt="search">
+          </button>
+        </label>
+      </form>
+      <div class="data-wrapper">
+        <div class="data">
+          <h2 class="data title">IP ADDRESS</h2>
+          <p id="data-ip" class="data content">...</p>
+        </div>
+        <span class="vertical-line"></span>
+        <div class="data">
+          <h2 class="data title">LOCATION</h2>
+          <p id="data-location" class="data content">...</p>
+        </div>
+        <span class="vertical-line"></span>
+        <div class="data">
+          <h2 class="data title">TIMEZONE</h2>
+          <p id="data-timezone" class="data content">...</p>
+        </div>
+        <span class="vertical-line"></span>
+        <div class="data">
+          <h2 class="data title">ISP</h2>
+          <p id="data-isp" class="data content">...</p>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrapper">
+      <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <script src="index.js"></script>
+  </body>
+</html>
